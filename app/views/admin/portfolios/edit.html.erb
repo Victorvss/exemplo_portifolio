@@ -1,6 +1,7 @@
-<h1>Editing Portfolio</h1>
 
-<%= render 'form' %>
 
-<%= link_to 'Show', [:admin, @portfolio] %> |
-<%= link_to 'Back', admin_portfolios_path %>
+<div class="jumbotron col-sm-5 col-sm-offset-3">
+  <h1>Editar Portfolio</h1>
+  <%= render 'form' %>
+  <%= link_to 'Exibir', [:admin, @portfolio], class: "btn btn-primary btn-sm btn-block" %>
+</div>

@@ -12,26 +12,26 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.label "Nome" %><br>
+    <%= f.text_field :name, class: "form-control" %>
   </div>
   <div class="field">
-    <%= f.label :degree %><br>
-    <%= f.text_field :degree %>
+    <%= f.label "Graduação" %><br>
+    <%= f.text_field :degree, class: "form-control" %>
   </div>
   <div class="field">
-    <%= f.label :phone %><br>
-    <%= f.text_field :phone %>
+    <%= f.label "Contato" %><br>
+    <%= f.text_field :phone, class: "Contato form-control" %>
   </div>
   <div class="field">
-    <%= f.label :professional_history %><br>
-    <%= f.text_field :professional_history %>
+    <%= f.label "Histórico Profissional" %><br>
+    <%= f.text_field :professional_history, class: "form-control" %>
   </div>
   <div class="field">
-    <%= f.label :avatar %><br>
+    <%= f.label "Foto" %><br>
     <%= f.text_field :avatar %>
-  </div>
+  </div><br>
   <div class="actions">
-    <%= f.submit %>
-  </div>
+    <%= f.submit "Salvar", class: "btn btn-info btn-sm btn-block" %>
+  </div><br>
 <% end %>
