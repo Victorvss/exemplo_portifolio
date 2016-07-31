@@ -1,7 +1,13 @@
 Rails.application.routes.draw do
 
+  get 'home/index'
+
+#admin/portfolios/4/edit
+
   devise_for :users
+      root "home#index"
     namespace :admin do
+      root "portfolios#edit", id: 4
       resources :portfolios, except: [:index]
     end
   # The priority is based upon order of creation: first created -> highest priority.
