@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @portfolio.name %>
+</p>
+
+<p>
+  <strong>Degree:</strong>
+  <%= @portfolio.degree %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @portfolio.phone %>
+</p>
+
+<p>
+  <strong>Professional history:</strong>
+  <%= @portfolio.professional_history %>
+</p>
+
+<p>
+  <strong>Avatar:</strong>
+  <%= @portfolio.avatar %>
+</p>
+
+<%= link_to 'Edit', edit_admin_portfolio_path(@portfolio) %> |
+<%= link_to 'Back', admin_portfolios_path %>
